@@ -171,3 +171,5 @@ cython_debug/
 .pypirc
 
 lightning_logs/
+kaggle_store_sales/
+iframe_figures/
