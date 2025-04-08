@@ -127,7 +127,7 @@ class OECDAPI:
                 indicator_df = pd.DataFrame(columns=["TIME_PERIOD", "REF_AREA", conf.get("TRANSACTION", ".")])
             csv_filename = f"{path}{col}.csv"
             indicator_df.to_csv(csv_filename, index=False)
-            print(f"Data for indicator '{col}' saved to {csv_filename}")
+            print(f"Data for variable '{col}' saved to {csv_filename}")
         return self
 
     def create_dataframe(self, cols: List[str] = None, path: str = "./datasets/OECD/") -> pd.DataFrame:
