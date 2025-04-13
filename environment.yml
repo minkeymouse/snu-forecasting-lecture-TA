@@ -63,7 +63,7 @@ dependencies:
       - idna==3.10
       - lxml==5.3.2
       - numpy==2.2.4
-      - oecddatabuilder==0.1.0
+      - oecddatabuilder==0.1.2
       - pandas==2.2.3
       - pytz==2025.2
       - requests==2.32.3
