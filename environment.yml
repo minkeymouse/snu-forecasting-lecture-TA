@@ -1,14 +1,17 @@
 name: forecasting_lecture
 channels:
   - conda-forge
+  - defaults
 dependencies:
   # ── core ────────────────────────────────────────────────
   - python=3.10
   - pip
+
   # ── notebook stack ──────────────────────────────────────
   - ipykernel
   - jupyterlab
   - ipywidgets
+
   # ── numeric libs ────────────────────────────────────────
   - numpy=1.26.*                   # GluonTS < 2.2 requirement  
   - pandas=2.2.3                   # required by OECDDataBuilder 
@@ -16,14 +19,19 @@ dependencies:
   - matplotlib
   - tqdm
   - requests
+  - seaborn
+
   # ── deep-learning stack ─────────────────────────────────
   - pytorch=2.1.2                  # osx-arm64 wheel exists
-  - lightning=2.2.4                # umbrella pkg (imports `lightning.pytorch`)
-  - pytorch-lightning=2.2.3        # last version with conda-forge osx-arm64 build 
+  - pytorch-lightning=2.2.3        # last conda-forge osx-arm64 build
+
   # ── time-series libs ───────────────────────────────────
   - gluonts=0.16.1                 # pandas < 3, Lightning 2.2.* 
   - lxml
+  - statsmodels
+
   # ── PyPI-only deps ──────────────────────────────────────
   - pip:
-      - neuralprophet==0.9.0       # no conda build yet :contentReference[oaicite:2]{index=2}
-      - oecddatabuilder==0.1.2     # pandas ≥ 2.2.3 
+      - neuralprophet==0.9.0       # no conda build yet
+      - oecddatabuilder==0.1.2     # pandas ≥ 2.2.3
+      - arch==7.2.0                # move ARCH to pip install
