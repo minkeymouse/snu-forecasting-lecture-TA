@@ -35,3 +35,4 @@ dependencies:
       - neuralprophet==0.9.0       # no conda build yet
       - oecddatabuilder==0.1.2     # pandas ≥ 2.2.3
       - arch==7.2.0                # move ARCH to pip install
+      - pytorch-forecasting==1.4.0 # pytorch forecasting
