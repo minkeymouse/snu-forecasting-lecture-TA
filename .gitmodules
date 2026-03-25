@@ -1,0 +1,4 @@
+[submodule "sktime"]
+	path = sktime
+	url = https://github.com/minkeymouse/sktime
+
