@@ -175,3 +175,6 @@ kaggle_store_sales/
 iframe_figures/
 OECD/
 recipe/
+
+# Local demo app cache
+database/raw_daily/

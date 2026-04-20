@@ -6,11 +6,17 @@ readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
     "arch>=8.0.0",
+    "changefinder>=0.3",
+    "fastapi>=0.136.0",
     "ipykernel>=7.2.0",
     "matplotlib>=3.10.8",
     "nbconvert>=7.17.0",
-    "pykrx>=1.2.4",
+    "numpy>=2.4.4",
+    "pandas>=3.0.2",
+    "plotly>=6.7.0",
+    "ruptures>=1.1.10",
     "scipy>=1.17.1",
     "seaborn>=0.13.2",
     "statsmodels>=0.14.6",
+    "uvicorn>=0.38.0",
 ]
