@@ -181,3 +181,6 @@ database/raw_daily/
 
 # Notebook-generated submission files (regenerate on execution)
 practices/submission_*.csv
+
+TEMP/
+CLAUDE.md
